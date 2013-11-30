@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>RedBot Test</h1>
+    
+    <!--  
+    void forward(int l, int r, int t);
+    void reverse(int l, int r, int t);
+    void rotate(int t);
+    void brake(int t);
+    -->
+    
+    
+    <table>
+    
+    <tr>
+    	<td colspan="3">
+    		<input type="button" name="forward" value="forward" onclick="javascript:move('forward');">
+    	</td>
+    </tr>
+    
+    
+    <tr>
+    	<td>
+    		<input type="button" name="rotate-left" value="rotate-left" onclick="javascript:move('rotate-left');">
+    	</td>
+    	<td>
+    		<input type="button" name="brake" value="brake" onclick="javascript:move('brake');">
+    	</td>
+    	<td>
+    		<input type="button" name="rotate-right" value="rotate-right" onclick="javascript:move('rotate-right');">
+    	</td>
+    </tr>
+    
+    
+    <tr>
+    	<td colspan="3">
+    		<input type="button" name="reverse" value="reverse" onclick="javascript:move('reverse');">
+    	</td>
+    </tr>
+    
+    <tr>
+    	<td colspan="3">
+    		<span id="dist">0</span>
+    	</td>
+    </tr>
+    
+    </table>
+    
+    
+   
+  <script src="/javascripts/socket.io.js"></script>
+  <script src="/javascripts/jquery-1.10.2.min.js"></script>
+  <script src="/javascripts/my.js"></script>
+  </body>
+</html>
